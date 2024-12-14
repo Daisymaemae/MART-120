@@ -1,0 +1,47 @@
+<html>
+   <title>Third Page</title>
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+
+        </script>
+        <script>
+            
+            function checkboxes()
+          {
+            var EmailAddress = document.getElementById("Email").value;
+            if (EmailAddress == "") 
+            {
+                document.getElementById("Email").focus();
+                document.getElementById("Email").style.backgroundColor = "red";
+                document.getElementById("Emailmessage").innerHTML = "* Required";
+                document.getElementById("Emailmessage").style.color = "red";
+                return false;
+            }
+         } 
+        </script>
+
+    </head>
+    <body style="background-color: azure;">
+
+        <div>Contact us</div>
+        <p></p>
+        <form action="">
+            <span>
+            <p>First Name: <input type="text" id="fName"></p>
+            <p>Last Name: <input type="text" id="lName"></p>
+            <p>Email Address: <input type="text" id="Email">&nbsp;<span id="Emailmessage"></span></p>
+            <button id="btnSubmit" class="btn btn-primary" onclick='checkboxes();'>Submit My Info</button>
+            </span>
+            <br />
+
+        &nbsp;<span style="font-size:32px">|</span>&nbsp;<a href="Secondpage.html" id="go back">Go Back</a></p>
+        <br />
+        &nbsp;<span style="font-size:32px">|</span>&nbsp;<a href="Homepage.html" id="homepage">Homepage</a></p>
+
+    </body>
+
+</html>
